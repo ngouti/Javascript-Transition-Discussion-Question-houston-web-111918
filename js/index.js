@@ -19,17 +19,15 @@ function test(){
     if(x === NaN){
       x = 10000
     }
+    //  1 is default value = fully opaque
+    //  0 = full transparent
     if (!y.style.opacity) {
         y.style.opacity = 1;
     }
-  //   if (y.style.opacity = 0) {
-  //     clearInterval(fade);
-  // } 
-    if (y.style.opacity < 0.1) {
-        clearInterval(fade);
-    } else {
-        y.style.opacity -= 0.1;
-    }
+    if (y.style.opacity = 0) {
+      clearInterval(fade);
+  } 
+   
 }, x);
 
     
